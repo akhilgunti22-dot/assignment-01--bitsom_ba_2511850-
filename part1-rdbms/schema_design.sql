@@ -6,16 +6,16 @@
 CREATE TABLE Customers (
     customer_id VARCHAR(10) PRIMARY KEY,
     customer_name VARCHAR(100) NOT NULL,
-    customer_email VARCHAR(100) NOT NULL
+    customer_email VARCHAR(100) NOT NULL,
+    city VARCHAR(50) NOT NULL
 );
 
 INSERT INTO Customers VALUES
-('C001', 'Alice', 'alice@email.com'),
-('C002', 'Bob', 'bob@email.com'),
-('C003', 'Charlie', 'charlie@email.com'),
-('C004', 'David', 'david@email.com'),
-('C005', 'Emma', 'emma@email.com');
-
+('C001', 'Alice', 'alice@email.com', 'Mumbai'),
+('C002', 'Bob', 'bob@email.com', 'Delhi'),
+('C003', 'Charlie', 'charlie@email.com', 'Mumbai'),
+('C004', 'David', 'david@email.com', 'Bangalore'),
+('C005', 'Emma', 'emma@email.com', 'Mumbai');
 -- =========================
 -- TABLE: Products
 -- =========================
