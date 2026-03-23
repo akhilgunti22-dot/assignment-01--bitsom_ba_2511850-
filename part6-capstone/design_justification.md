@@ -13,3 +13,9 @@ The OLTP system consists of operational databases such as PostgreSQL, which hand
 The OLAP system begins after data is extracted from OLTP systems through ETL/ELT pipelines. This data is transformed and loaded into the Data Lake and Data Warehouse. The Data Lake stores raw and semi-processed data, while the Data Warehouse stores structured, query-optimized data for reporting and analytics.
 
 Thus, the boundary lies at the data pipeline stage, where transactional data is moved from operational systems into analytical systems for further processing and insights.
+
+## Trade-offs
+
+One major trade-off in this architecture is increased system complexity due to the use of multiple storage systems, including OLTP databases, Data Lakes, Data Warehouses, streaming systems, and vector databases. Managing and integrating these components can be challenging and may require skilled personnel and higher operational costs.
+
+To mitigate this, the system can adopt a unified Data Lakehouse approach where possible, reducing the need for separate systems. Additionally, using managed cloud services such as AWS or Azure can simplify infrastructure management. Proper data governance, monitoring, and automation of pipelines can further reduce operational overhead and ensure system reliability.
